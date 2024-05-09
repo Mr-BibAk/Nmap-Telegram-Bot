@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-const TOKEN = 'TELEGRAM BOT API KEY HERE'; // Replace with your Telegram bot token
+const TOKEN = '6603119338:AAGD5hMeLR5WYZKCHsraCdGMsqoTQygCW9g'; // Replace with your Telegram bot token
 
 const bot = new TelegramBot(TOKEN, { polling: true });
 
@@ -21,7 +21,7 @@ const scanOptions = [
   { emoji: '🔏', name: 'Intense Scan', description: 'A more intensive scan that includes all scan types.' },
 ];
 
-const subscribeMessage = `🚀 Welcome to the NMAP Scan Bot! 🚀\nBefore we start, please consider subscribing to my YouTube channel Hacker101 for awesome content: https://www.youtube.com/@Hacker101vids`;
+const subscribeMessage = `🚀 Welcome to the NMAP Scan Bot! 🚀\nBefore we start,Mr.BibAk;
 
 bot.onText(/\/scan/, async (msg) => {
   const chatId = msg.chat.id;
